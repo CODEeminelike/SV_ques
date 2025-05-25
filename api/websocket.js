@@ -22,7 +22,7 @@ const WebSocket = require('ws');
           const data = JSON.parse(message);
           if (data.type === 'screenshot') {
             console.log('Received screenshot, size:', data.data.length);
-            ws.send('OK'); // Gửi ký tự phản hồi
+            ws.send('OK'); // Gửi phản hồi
           }
         } catch (error) {
           console.error('Error parsing message:', error);
