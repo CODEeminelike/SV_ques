@@ -1,0 +1,12 @@
+{
+  "routes": [
+    {
+      "src": "/api/websocket",
+      "dest": "/api/websocket.js",
+      "headers": {
+        "Upgrade": "websocket",
+        "Connection": "Upgrade"
+      }
+    }
+  ]
+}
